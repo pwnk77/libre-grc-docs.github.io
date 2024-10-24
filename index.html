@@ -26,11 +26,13 @@
                 <!-- Updated image path -->
                 <img src="../public/webpage-home-banner.png" alt="libre-grc companion banner" class="banner-image">
             </div>
-            <div id="video-placeholder">
-                <!-- Embedded YouTube video -->
-                <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KMrt-4hAXRA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+            <div id="video-container">
+                <!-- Updated YouTube embed with custom thumbnail -->
+                <lite-youtube videoid="KMrt-4hAXRA" playlabel="Play: libre grc walkthrough">
+                    <button type="button" class="lty-playbtn">
+                        <span class="lyt-visually-hidden">Play Video: libre grc walkthrough</span>
+                    </button>
+                </lite-youtube>
             </div>
             <h1>welcome to libre-grc companion</h1>
             <div id="landing-content"></div>
@@ -42,5 +44,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="lite-youtube.js"></script>
 </body>
 </html>
